@@ -17,10 +17,8 @@
         <div class="header">
             <h3>Registration Form</h3>
         </div>
-        <div class="content" id="content-1">
             <fieldset>
                 <legend>Personal Information</legend>
-                <div class="personal">
                     <div class="fname">
                     <label for="fname">First Name: </label>
                     <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -66,15 +64,10 @@
                             <option value="widowed">Widowed</option>
                         </select>
                     </div>
-
-                </div>
             </fieldset>
-        </div>
 
-        <div class="content" id="content-2">
             <fieldset>
                 <legend>Family Member</legend>
-                <div class="family">
                     <div class="father">
                     <label for="father">Name of Father: </label>
                     <input type="text" id="father" name="father" placeholder="Father's Name">
@@ -89,12 +82,8 @@
                         <label for="siblings">Number of Siblings: </label>
                         <input type="number" min="1" max="100" value="1">
                     </div> 
-
-                </div>
             </fieldset>
-        </div>
 
-        <div class="content" id="content-3">
             <fieldset>
                 <legend>Educational Background</legend>
                 <div class="education">
@@ -123,15 +112,10 @@
                         <label for="year-grad">Year Graduated: </label>
                         <input type="number" name="number" id="number" min="1900" max="2024" value="1900">
                     </div>
-
-                </div>
             </fieldset>
-        </div>
 
-        <div class="content" id="content-4">
             <fieldset>
                 <legend>Employment Details</legend>
-                <div class="employment">
                     <div class="occupation">
                         <label for="occupation">Occupation: </label>
                         <input type="text" id="occupation" name="occupation" placeholder="Occupation">
@@ -151,16 +135,11 @@
                             <option value="+10">more than 10 years</option>
                         </select>
                     </div>
-
-                </div>
             </fieldset>
-        </div>
 
-        <div class="content" id="content-5">
-            <fieldset>
+            <fieldset class="last">
                 <legend>Hobbies</legend>
-                <div class="hobbies">
-                    <div class="checked">
+                    <div class="hobbies">
                     <label for="hobbies">Choose a hobby/ies: </label><br /><br />
                     Reading <input type="checkbox" name="hobbies" id="hobbies" value="reading">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                     Writing <input type="checkbox" name="hobbies" id="hobbies" value="writing"><br />
@@ -174,16 +153,12 @@
                         <label for="others">Specify Other Hobbies: </label>
                         <input type="text" name="others" id="others" placeholder="Other Hobbies">
                     </div>
-
-                </div>
-            </fieldset>
-        </div> 
+            </fieldset> 
 
                 <div class="buttons">
                     <input type="submit" name="submit" value="Submit Details">
                     <input type="reset" name="reset" value="Reset Registration">
                 </div>
-
     </div>
 </body>
 </html>
