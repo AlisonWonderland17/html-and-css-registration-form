@@ -52,6 +52,9 @@ legend {
 
 .content {
     padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 2px;
 }
 
 .content input[type=text], input[type=number], input[type=date], select  {
@@ -59,6 +62,7 @@ legend {
     outline: none;
     background: transparent;
     border: 2px solid rgb(14, 83, 230);
+    height: 35px;
 }
 
 
