@@ -10,16 +10,15 @@ html, body {
 }
 
 .container {
-    flex: display;
-    margin: 10px 20px;
-    padding: 10px;
+    margin: 0 20px;
+    padding: 30px 10px;
 }
 
 .header {
     border-radius: 10px 10px 0 0;
-    border: 3px solid rgba(248, 16, 147, 0.7);
+    border: 5px solid rgba(248, 16, 147, 0.7);
     background-color: transparent;
-    margin: 20px 50px;
+    margin: 10px 20px;
     padding: 2px;
 }
 
@@ -33,9 +32,11 @@ html, body {
 }
 
 fieldset {
-    margin: 20px 50px;
-    padding: 20px;
-    border: 3px solid rgba(248, 16, 147, 0.7);
+    margin: 20px;
+    padding: 20px 30px;
+    border: 5px solid rgba(248, 16, 147, 0.7);
+    display: flex;
+    flex-direction: column;
 }
 
 .last {
@@ -51,10 +52,26 @@ legend {
 }
 
 .content {
-    padding-bottom: 10px;
-    text-align: center;
+    margin-top: 20px;
     font-size: 1.2em;
     letter-spacing: 2px;
+    position: relative;
+}
+
+.content > label {
+    font-size: 1.1rem;
+    background: rgb(12, 158, 206);
+    padding: 1px 2px;
+    border-radius: 5px;
+}
+
+.content > label:not(.normal) {
+    position: absolute;
+    font-size: 0.9rem;
+    transform: translate(10px, -10px);
+    background: rgb(12, 158, 206);
+    padding: 1px 2px;
+    border-radius: 5px;
 }
 
 .content input[type=text], input[type=number], input[type=date], select  {
@@ -62,7 +79,13 @@ legend {
     outline: none;
     background: transparent;
     border: 2px solid rgb(14, 83, 230);
-    height: 35px;
+    height: auto;
+    width: 100%;
+    padding: 10px;
 }
+
+
+
+
 
 
