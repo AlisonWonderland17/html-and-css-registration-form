@@ -18,7 +18,7 @@ html, body {
     border-radius: 10px 10px 0 0;
     border: 5px solid rgba(248, 16, 147, 0.7);
     background-color: transparent;
-    margin: 10px 20px;
+    margin: 10px 50px;
     padding: 2px;
 }
 
@@ -31,12 +31,15 @@ html, body {
     text-shadow: 1px 1px 3px rgb(35, 33, 33); 
 }
 
-fieldset {
-    margin: 20px;
-    padding: 20px 30px;
-    border: 5px solid rgba(248, 16, 147, 0.7);
+form {
     display: flex;
     flex-direction: column;
+}
+
+fieldset {
+    margin: 20px 50px;
+    padding: 20px 30px;
+    border: 5px solid rgba(248, 16, 147, 0.7);
 }
 
 .last {
@@ -56,6 +59,7 @@ legend {
     font-size: 1.2em;
     letter-spacing: 2px;
     position: relative;
+    text-align: center;
 }
 
 .content > label {
@@ -80,7 +84,7 @@ legend {
     background: transparent;
     border: 2px solid rgb(14, 83, 230);
     height: auto;
-    width: 100%;
+    width: 75%;
     padding: 10px;
     font-size: 1.2rem;
 }
@@ -89,6 +93,41 @@ legend {
     border: 2px solid rgb(4, 43, 128);
     transition: .5s;
 } 
+
+.buttons {
+    align-self: center;
+}
+
+.submit, .reset {
+    margin-right: 20px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 3px solid rgb(14, 83, 230);
+    background-image: linear-gradient(to right, rgba(248, 138, 182, 0.5), rgba(248, 138, 182, 0.8), rgba(248, 138, 182, 1.0) ); 
+    color: rgb(59, 1, 51);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.submit:hover, .reset:hover {
+    background-image: linear-gradient(to right, rgba(119, 192, 238, 0.5), rgba(119, 192, 238, 0.8), rgba(119, 192, 238, 1.0) ); 
+    color: rgb(3, 42, 100);
+}
+
+.submit a {
+    text-decoration: none;
+    color: rgb(59, 1, 51);
+}
+
+.submit a:hover {
+    color: rgb(3, 42, 100);    
+}
+
+
 
 
 
