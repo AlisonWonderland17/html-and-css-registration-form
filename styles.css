@@ -94,6 +94,10 @@ legend {
     transition: .5s;
 } 
 
+.content .gender {
+    font-size: 1rem;
+}
+
 .buttons {
     align-self: center;
 }
