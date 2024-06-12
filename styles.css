@@ -98,6 +98,25 @@ legend {
     font-size: 1rem;
 }
 
+.content .tooltip {
+    font-size: 0.7rem;
+    color: rgb(59, 1, 51);;
+    background: transparent;
+    padding: 3px;
+    margin-left: 3px;
+    border-radius: 10px;
+    border: 2px solid rgba(248, 16, 147, 0.7);;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 110px;
+}
+
+.content input:hover + .tooltip {
+    visibility: visible;
+}
+
 .buttons {
     align-self: center;
 }
